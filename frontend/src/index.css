@@ -7,3 +7,44 @@
   font-family: 'Teko';
 }
 
+p {
+  font-weight: lighter;
+}
+h1 {
+  font-weight: bold;
+}
+h2 {
+  font-weight: 500;
+}
+
+/* Logical margins for block elements */
+p,
+h1,
+h2,
+h3 {
+  margin-block: 0.5em 0.5em; 
+}
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+  height: 12px; /* Height for horizontal scrollbar */
+}
+::-webkit-scrollbar:hover {
+  width: 8px; /* Width of the scrollbar */
+  height: 15px; /* Height for horizontal scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Handle (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.322); /* Dark gray handle */
+  border-radius: 10px; /* Rounded corners */
+   /* Space between handle and track */
+}
+
+

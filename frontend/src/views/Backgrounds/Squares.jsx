@@ -127,7 +127,7 @@ useEffect(() => {
   };
 }, [direction, speed, borderColor, hoverFillColor, hoveredSquare, squareSize]);
 
-return <canvas ref={canvasRef} className="w-full h-full border-none block absolute -z-10 top-0 left-0 opacity-20"></canvas>;
+return <canvas ref={canvasRef} className="w-full h-full border-none block fixed -z-10 top-0 left-0 opacity-20"></canvas>;
 };
 
 export default Squares;

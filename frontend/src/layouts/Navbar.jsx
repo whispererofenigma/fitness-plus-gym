@@ -6,10 +6,10 @@ const Navbar = () => {
   // Navigation items
   const navItems = [
     { label: "Home", path: "/" },
-    { label: "About", path: "/about" },
+    { label: "Products", path: "/about" },
     { label: "Services", path: "/services" },
-    { label: "Contact", path: "/contact" },
-    { label: "Blogs", path: "/blog" },
+    { label: "About Us", path: "/contact" },
+    { label: "Contact Us", path: "/blog" },
   ];
 
   // Get the current route
@@ -21,9 +21,20 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';  // Disable scrolling
+    } else {
+      document.body.style.overflow = 'auto';  // Re-enable scrolling
+    }
+    return () => {
+      document.body.style.overflow = 'auto';  // Re-enable scrolling
+    };
+  });
+
   return (
     <div>
-      <nav className=" p-4 w-screen absolute flex justify-between items-center">
+      <nav className=" p-[2vw]  w-[100vw] absolute flex justify-between items-center">
 
         <img src={Navlogo} alt="Logo" className="object-cover object-center h-12 md:h-14 rounded-full" />
 
@@ -46,7 +57,7 @@ const Navbar = () => {
         {/* For mobile view */}
 
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button onClick={toggleMenu} className="text-[#a2ff00]">
             <svg
               className="h-8 w-8"
@@ -75,9 +86,9 @@ const Navbar = () => {
         </div>
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden text-white w-screen absolute z-1 justify-center gap-10 text-xl py-14 h-screen bg-transparent backdrop-brightness-50 backdrop-blur-xl top-0 left-0 flex flex-col items-center">
-            <img src={Navlogo} alt="Logo" className="object-cover object-center absolute top-0 left-0 m-4 h-14 rounded-full" />
-            <button onClick={toggleMenu} className="absolute top-0 right-0 m-4">
+          <div className="lg:hidden text-white w-screen absolute z-1 justify-center gap-10 text-xl py-14 h-screen bg-transparent backdrop-brightness-50 backdrop-blur-xl top-0 left-0 flex flex-col items-center">
+            <img src={Navlogo} alt="Logo" className="object-cover object-center absolute top-0 left-0 m-[2vw] h-12 rounded-full" />
+            <button onClick={toggleMenu} className="absolute top-0 right-0 m-[2vw]">
               <svg
                 className="h-8 w-8"
                 xmlns="http://www.w3.org/2000/svg"
@@ -104,7 +115,7 @@ const Navbar = () => {
             </button>
 
             {navItems.map((item, index) => (item.path !== location.pathname && (
-              <Link key={index} to={item.path} className="border rounded-full w-4/5 p-2 text-center border-white/20 shadow-2xl shadow-violet-800">
+              <Link key={index} to={item.path} className="border rounded-full w-4/5 p-2 text-center border-white/20 shadow-2xl shadow-[#a2ff00]">
                 {item.label}
               </Link>
             )))}

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroImage from '../../images/Hero-image.jpg';
+
 import BlurText from './BlurText';
 import TrueFocus from './TrueFocus';
 
@@ -8,7 +8,7 @@ function Hero() {
 
 
     return (
-        <div className='px-4 flex h-screen w-screen items-center' >
+        <div className='px-[4vw] mx-[4vw] w-[92vw]  flex h-screen items-center' >
             <text className='text-[10vh] md:text[16v] leading-[1] w-full'>
                 <BlurText
                     text="UNLOCK YOUR GODLY POTENTIAL WITH"
