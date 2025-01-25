@@ -4,8 +4,11 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 function App() {
-  AOS.init();
-
+  useEffect(() => {
+    AOS.init();
+    // Refresh AOS if content updates dynamically
+    AOS.refresh();
+  }, []);
 
   return (
     <Router>
