@@ -44,7 +44,7 @@ function Features() {
         <div className='p-[4vw] m-[4vw] w-[92vw]'>
             <h2 className='text-4xl text-[#a2ff00]'>What Makes Us Stand Out?</h2>
             <p>Step into a space designed to inspire, motivate, and deliver results. At our gym, we combine state-of-the-art facilities with expert guidance and personalized care to ensure every workout feels like a step closer to your goals. Whether you're here to build strength, improve endurance, or simply embrace a healthier lifestyle, we've got everything you need to make it happen—because your success is our priority.</p>
-            <div className='grid lg:grid-cols-4 gap-4 justify-center items-center'>
+            <div className='grid lg:grid-cols-4 gap-4 mt-8 justify-center items-center'>
                 {spotlightData.map((item, index) => (
                     <SpotlightCard className='flex gap-x-6 items-start' key={index}>
                         <FontAwesomeIcon icon={item.icon} className='text-2xl text-white/40'/>

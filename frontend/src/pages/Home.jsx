@@ -5,13 +5,7 @@ import Hero from '../components/Home/Hero/Hero';
 import Personalisation from '../components/Home/Personalisation/Personalisation';
 import Motivation from '../components/Home/Motivation/Motivation';
 import Features from '../components/Home/Features/Features';
-
-
-
-
-
-
-
+import Tour from '../components/Home/Tour/Tour';
 
 
 
@@ -23,7 +17,7 @@ function Home() {
         <Personalisation />
         <Motivation /> 
         <Features />       
-        
+        <Tour />
         <Squares/>
     </div>
   )
