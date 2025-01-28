@@ -30,7 +30,7 @@ const Personalisation = () => {
   return (
     <div className='bg-gray-400/20 grid items-center justify-center grid-cols-1 lg:grid-cols-3 gap-y-8 lg:gap-8 p-[4vw] m-[4vw] w-[92vw] rounded-xl '>
       <div className='text-center md:text-left col-span-1'>
-        <h1 className='text-4xl text-[#a2ff00]'>Achieve Your Goals with Personalized Training</h1>
+        <h2 className='text-4xl text-[#a2ff00]'>Achieve Your Goals with Personalized Training</h2>
 
         <p>At Fitness Plus, we believe fitness is personal. Whether your goal is weight loss, muscle building, improved stamina, or overall health, our programs are designed just for you.
 

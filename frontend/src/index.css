@@ -11,17 +11,16 @@ p {
   font-weight: lighter;
 }
 h1 {
-  font-weight: bold;
+  font-weight: normal;
 }
 h2 {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 /* Logical margins for block elements */
 p,
 h1,
-h2,
-h3 {
+h2 {
   margin-block: 0.5em 0.5em; 
 }
 /* Style the scrollbar */

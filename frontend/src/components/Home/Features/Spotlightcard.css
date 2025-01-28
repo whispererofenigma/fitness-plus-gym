@@ -1,0 +1,27 @@
+.card-spotlight {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  border: 1px solid #222;
+  background-color: #111;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out;
+}
+
+.card-spotlight::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%; /* Larger area for smooth gradient */
+  height: 200%;
+  background: radial-gradient(
+    circle at 50% var(--spotlight-y, 50%),
+    rgba(88, 88, 88, 0.54),
+    transparent 20%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: background 0.2s ease-out;
+}

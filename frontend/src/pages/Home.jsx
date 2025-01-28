@@ -4,6 +4,7 @@ import Navbar from '../layouts/Navbar';
 import Hero from '../components/Home/Hero/Hero';
 import Personalisation from '../components/Home/Personalisation/Personalisation';
 import Motivation from '../components/Home/Motivation/Motivation';
+import Features from '../components/Home/Features/Features';
 
 
 
@@ -20,7 +21,9 @@ function Home() {
         <Navbar />
         <Hero />
         <Personalisation />
-        <Motivation />        
+        <Motivation /> 
+        <Features />       
+        
         <Squares/>
     </div>
   )
