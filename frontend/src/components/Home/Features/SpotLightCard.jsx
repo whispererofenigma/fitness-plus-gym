@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import "./SpotlightCard.css";
+import "./Spotlightcard.css";
 
 const SpotlightCard = ({
   children,
