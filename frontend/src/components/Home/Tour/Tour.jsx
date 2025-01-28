@@ -21,7 +21,11 @@ function Tour() {
     ];
 
     return (
-        <div className='w-full mt-[2vw] bg-black absolute z-0'  style={{height: '500px', positon: 'relative'}}>
+        <div className=' px-[4vw] mx-[4vw] w-[92vw] md:flex gap-8 justify-center items-start'>
+            <div className='md:w-[50%] order-2'> 
+                <h2 className='text-4xl text-[#a2ff00] '>Step Inside FItness Plus</h2>
+                <p>At Fitness Plus, every corner is designed to inspire and motivate you. From our spacious cardio zones to our cutting-edge weightlifting areas, you’ll find the perfect setting to crush your fitness goals. Our group class studios are filled with energy, while the recovery and relaxation zones provide a serene escape for post-workout rejuvenation. With modern amenities, spotless locker rooms, and a welcoming atmosphere, Fitness Plus is more than a gym—it’s where your journey to a healthier, stronger you begins.</p>
+            </div>
             <InfiniteScroll
                 items={items}
                 isTilted={true}

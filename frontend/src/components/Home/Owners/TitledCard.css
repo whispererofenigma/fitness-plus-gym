@@ -1,0 +1,43 @@
+.card {
+    position: relative;
+    z-index: 0;
+    height: fit-content;
+    background: conic-gradient(from var(--angle),  #a2ff00, transparent);
+    animation: changeAngle 2.5s linear infinite;
+    border-radius: 15px;
+    
+    padding: 2px;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+
+@keyframes changeAngle {
+    0% {
+        --angle: 0deg;
+    }
+    100% {
+        --angle: -360deg;
+    }
+}
+
+.card::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: conic-gradient(from var(--angle), #a2ff00, transparent);
+    border-radius: 5px;
+    filter: blur(10px); /* Blur only on the background */
+    z-index: -1; /* Make sure it stays behind */
+    animation: changeAngle 2.5s linear infinite;
+    
+    
+
+}

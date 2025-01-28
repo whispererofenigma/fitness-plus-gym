@@ -8,7 +8,7 @@ gsap.registerPlugin(Observer);
 export default function InfiniteScroll({
   // ----- Layout / Style Props -----
   width = "30rem",             // Width of the outer .wrapper
-  maxHeight = "100%",          // Max-height of the outer .wrapper
+  maxHeight = "400px",          // Max-height of the outer .wrapper
   negativeMargin = "-3.5em",   // Negative margin to reduce spacing between items
   // ----- Items Prop -----
   items = [],                  // Array of items with { content: ... }

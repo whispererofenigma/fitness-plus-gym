@@ -6,6 +6,7 @@ import Personalisation from '../components/Home/Personalisation/Personalisation'
 import Motivation from '../components/Home/Motivation/Motivation';
 import Features from '../components/Home/Features/Features';
 import Tour from '../components/Home/Tour/Tour';
+import Owners from '../components/Home/Owners/Owners';
 
 
 
@@ -18,6 +19,9 @@ function Home() {
         <Motivation /> 
         <Features />       
         <Tour />
+        <Owners />
+              
+        
         <Squares/>
     </div>
   )
