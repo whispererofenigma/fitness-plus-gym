@@ -7,19 +7,8 @@ const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
 
-const allowedOrigins = ['http://localhost:5173', 'http://192.168.1.6:5173', 'https://www.fitnessplus.vercel.app', 'https://fitnessplus.vercel.app']; 
-app.use(cors({
-  origin: (origin, callback) => {
-    // Allow requests with no origin (like mobile apps, curl, etc.)
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.indexOf(origin) === -1) {
-      const msg = `The CORS policy for this site does not allow access from the specified origin: ${origin}`;
-      return callback(new Error(msg), false);
-    }
-    return callback(null, true);
-  },
-  credentials: true,
-}));
+// const allowedOrigins = ['http://localhost:5173', 'http://192.168.1.6:5173', 'https://www.fitnessplus.vercel.app', 'https://fitnessplus.vercel.app']; 
+app.use(cors());
 
 // Middleware
 app.use(express.json());
