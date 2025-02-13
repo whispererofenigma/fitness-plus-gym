@@ -7,7 +7,7 @@ const errorHandler = require('./middleware/errorHandler');
 
 const app = express();
 
-const allowedOrigins = ['http://localhost:5173', 'http://192.168.1.6:5173']; 
+const allowedOrigins = ['http://localhost:5173', 'http://192.168.1.6:5173', 'https://www.fitnessplus.vercel.app', 'https://fitnessplus.vercel.app']; 
 app.use(cors({
   origin: (origin, callback) => {
     // Allow requests with no origin (like mobile apps, curl, etc.)
