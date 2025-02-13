@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className=" p-[2vw]  w-[100vw] absolute flex justify-between items-center">
+      <nav className="right-0 p-[2vw]  w-[100vw] absolute flex justify-between items-center">
 
         <img src={Navlogo} alt="Logo" className="object-cover object-center h-12 md:h-14 rounded-full" />
 

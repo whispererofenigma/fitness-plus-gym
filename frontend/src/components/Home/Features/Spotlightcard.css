@@ -20,8 +20,16 @@
     circle at 50% var(--spotlight-y, 50%),
     rgba(88, 88, 88, 0.54),
     transparent 20%
+  ),
+  radial-gradient(
+    circle at 50% var(--spotlight-y, 50%),
+    rgba(88, 88, 88, 0.54),
+    transparent 20%
   );
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: background 0.2s ease-out;
+  z-index: 1;
 }
+
+

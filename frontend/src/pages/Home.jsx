@@ -7,6 +7,7 @@ import Motivation from '../components/Home/Motivation/Motivation';
 import Features from '../components/Home/Features/Features';
 import Tour from '../components/Home/Tour/Tour';
 import Owners from '../components/Home/Owners/Owners';
+import Social from '../components/Home/Social/Social';
 
 
 
@@ -20,6 +21,7 @@ function Home() {
         <Features />       
         <Tour />
         <Owners />
+        <Social />
               
         
         <Squares/>
