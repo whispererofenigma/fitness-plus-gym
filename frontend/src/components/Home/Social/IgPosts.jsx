@@ -18,7 +18,7 @@ const IgPosts = () => {
                      'x-limit': limit,
                 };
 
-                const response = await fetch('http://localhost:5000/api/instagram/posts', {
+                const response = await fetch('https://fitness-plus-gym-p212.vercel.app/', {
                     method: 'GET',
                     headers,
                 });
