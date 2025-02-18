@@ -12,13 +12,12 @@ const IgPosts = () => {
         const fetchPosts = async () => {
             try {
 
-                const limit = 3;
+                
                 const headers = {
-                    'Content-Type': 'application/json',
-                     'x-limit': limit,
+                    'Content-Type': 'application/json',                     
                 };
 
-                const response = await fetch('https://fitness-plus-gym.onrender.com/api/instagram/posts', {
+                const response = await fetch('https://fitness-plus-gym-p212.vercel.app/api/instagram/posts', {
                     method: 'GET',
                     headers,
                 });
@@ -45,20 +44,20 @@ const IgPosts = () => {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {posts.map((post) => (
-                <div key={post._id} className="rounded-xl shadow p-6 card-spotlight">
+                <div key={post.id} className="rounded-xl shadow p-6 card-spotlight">
                     <div className='flex gap-2 items-center mb-4 z-10 relative'>
                         <img src={Logo} alt="fitnesplusgym" className='rounded-full w-[10%]' />
                         <a href="https://instagram.com/fitnesplusgym" target='_blank'>@fitnesplusgym</a>
                     </div>
-                    {post.mediaType === 'VIDEO' ? (
-                        <video className="w-full aspect-square object-cover object-top rounded-lg">
-                            <source src={post.mediaUrl} type="video/mp4" />
+                    {post.media_type === 'VIDEO' ? (
+                        <video controls className="w-full aspect-square object-cover object-top rounded-lg">
+                            <source src={post.media_url} type="video/mp4" />
                             Your browser does not support the video tag.
                         </video>
-                    ) : post.mediaType === 'CAROUSEL_ALBUM' ? (
+                    ) : post.media_type === 'CAROUSEL_ALBUM' ? (
                         <div className="relative">
                             <img
-                                src={post.mediaUrl}
+                                src={post.media_url}
                                 alt={post.caption || 'Instagram Post'}
                                 className="w-full h-64 object-cover rounded"
                             />
@@ -68,7 +67,7 @@ const IgPosts = () => {
                         </div>
                     ) : (
                         <img
-                            src={post.mediaUrl}
+                            src={post.media_url}
                             alt={post.caption || 'Instagram Post'}
                             className="w-full aspect-square object-cover rounded-xl object-top"
                         />

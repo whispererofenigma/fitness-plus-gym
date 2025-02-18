@@ -3,7 +3,7 @@ const axios = require('axios');
 const InstagramPost = require('../models/InstagramPost');
 const igConfig = require('../config/instagramConfig');
 
-const fetchInstagramPosts = async () => {
+exports.fetchInstagramPosts = async () => {
   const endpoint = `${igConfig.baseUrl}/${igConfig.apiVersion}/${igConfig.instagramAccountId}/media`;
   const params = {
     access_token: igConfig.accessToken,
