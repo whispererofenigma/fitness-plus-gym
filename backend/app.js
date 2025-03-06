@@ -12,9 +12,9 @@ connectDB();
 app.options("*", cors());
 app.use(
   cors({
-    origin: "https://fitnessplus.vercel.app", // Allow frontend in dev mode
+    origin: "http://192.168.1.6:5173", // Allow frontend in dev mode
     methods: ["GET", "POST", "OPTIONS"],
-    allowedHeaders: ["Content-Type"],
+    allowedHeaders: ["Content-Type", "limit"],
     
   })
 );

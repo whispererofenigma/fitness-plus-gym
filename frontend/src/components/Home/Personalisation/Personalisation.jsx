@@ -52,8 +52,7 @@ const Personalisation = () => {
 
         // Dots for pagination
         // Scrollbar
-        onSwiper={(swiper) => console.log(swiper)} // Event listeners
-        onSlideChange={() => console.log('Slide changed!')}
+        
       >
         <SwiperSlide><Slides Image={Strength} Caption="Strength Training" /></SwiperSlide>
         <SwiperSlide><Slides Image={Cardio} Caption="Cardio Programme" /></SwiperSlide>

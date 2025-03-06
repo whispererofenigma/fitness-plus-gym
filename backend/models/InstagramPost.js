@@ -10,6 +10,8 @@ const InstagramPostSchema = new mongoose.Schema(
     permalink: { type: String },
     timestamp: { type: Date },
     mediaType: { type: String },
+    likeCount: { type: String },
+    commentsCount: { type: String },
   },
   { timestamps: true }
 );

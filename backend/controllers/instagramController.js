@@ -22,10 +22,15 @@ exports.fetchAndStorePosts = async (req, res, next) => {
 
 exports.getPosts = async (req, res, next) => {
   try {
-   
-    let query = instagramService.fetchInstagramPosts();
+    
+    const limitHeader = req.headers['x-limit'];
+    let query = InstagramPost.find({}).sort({ createdAt: -1 });
 
-   
+    // If the header exists and is a valid positive number, apply the limit.
+    if (limitHeader && !isNaN(parseInt(limitHeader, 10)) && parseInt(limitHeader, 10) > 0) {
+      const limit = parseInt(limitHeader, 10);
+      query = query.limit(limit);
+    }
 
     const posts = await query;
     res.status(200).json({
