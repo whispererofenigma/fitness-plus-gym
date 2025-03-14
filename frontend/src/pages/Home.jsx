@@ -10,6 +10,8 @@ import Owners from '../components/Home/Owners/Owners';
 import Social from '../components/Home/Social/Social';
 import Products from '../components/Home/Products/Products';
 import Footer from '../layouts/Footer';
+import Plans from '../components/Home/Plans/Plans';
+import Testimonials from '../components/Home/Testimonials/Testimonials';
 
 
 
@@ -24,10 +26,9 @@ function Home() {
         <Features />       
         <Tour />
         <Owners />
-        
+        <Plans />
+        <Testimonials />
         <Products />
-              
-        
         <Squares/>
         <Footer />
     </div>
