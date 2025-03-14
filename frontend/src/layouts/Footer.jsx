@@ -5,7 +5,7 @@ import Navlogo from '../images/logo.jpg';
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-white/20 p-[8vw]  w-full">
+      <footer className="relative z-10 bg-white/20 px-[8vw] py-8  w-full">
         <div className="container">
           <div className=" flex flex-wrap">
             <div className="w-full sm:w-2/3 lg:w-3/12">
@@ -14,12 +14,12 @@ const Footer = () => {
                   <img
                     src={Navlogo}
                     alt="logo"
-                    className="max-w-full dark:hidden"
+                    className="max-w-full rounded-full dark:hidden"
                   />
                   <img
-                    src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-white.svg"
+                    src={Navlogo}
                     alt="logo"
-                    className="max-w-full hidden dark:block"
+                    className="max-w-full rounded-full hidden dark:block"
                   />
                 </a>
                 <p className="mb-7 text-base text-body-color dark:text-dark-6">
@@ -67,18 +67,7 @@ const Footer = () => {
               <NavLink link="/#" label="User Flow" />
               <NavLink link="/#" label="User Strategy" />
             </LinkGroup>
-            <LinkGroup header="Company">
-              <NavLink link="/#" label="About TailGrids" />
-              <NavLink link="/#" label="Contact & Support" />
-              <NavLink link="/#" label="Success History" />
-              <NavLink link="/#" label="Setting & Privacy" />
-            </LinkGroup>
-            <LinkGroup header="Quick Links">
-              <NavLink link="/#" label="Premium Support" />
-              <NavLink link="/#" label="Our Services" />
-              <NavLink link="/#" label="Know Our Team" />
-              <NavLink link="/#" label="Download App" />
-            </LinkGroup>
+           
 
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
@@ -140,7 +129,7 @@ const Footer = () => {
                   </a>
                 </div>
                 <p className="text-base text-body-color dark:text-dark-6">
-                  &copy; 2025 TailGrids
+                  &copy; 2025 Fitness Plus
                 </p>
               </div>
             </div>

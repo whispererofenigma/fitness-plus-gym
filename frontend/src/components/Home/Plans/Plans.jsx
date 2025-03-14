@@ -23,7 +23,7 @@ const Plans = () => {
   ];
 
   return (
-    <section className='p-[4vw] m-[4vw] w-[92vw]'>
+    <section className='px-[4vw] mx-[4vw] w-[92vw]'>
       <h2 style={{ fontSize: '2.5rem', marginBottom: '2rem', color: '#A2FF00' }}>Our Plans</h2>
       <p>Embark on Your Fitness Transformation: Explore Our Comprehensive Membership Plans Designed to Help You Achieve Your Unique Goals, Whether You're Just Starting Out or Aiming for Peak Performance.</p>
       <div className='my-8' style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap', gap: '2rem' }}>
